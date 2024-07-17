@@ -1,0 +1,113 @@
+/* Style pour le corps de la page */
+body 
+{
+  font-size: 12px;
+  background-image: url("images/violet5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+form input
+{
+  color:white;
+  background-color: transparent;
+  backdrop-filter: blur(8px); /* c'est le flou ca */
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0 0 0 0 #FFF;
+  cursor: pointer;
+}
+button
+{
+  color:white;
+  background-color: transparent;
+  backdrop-filter: blur(8px); /* c'est le flou ca */
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0 0 0 0 #FFF;
+  cursor: pointer;
+}
+
+button:hover
+{
+  animation: pulse 1s;
+  color:red;
+}
+
+form input:hover
+{
+  animation: pulse 1s;
+  color:red;
+}
+
+/* Style pour la bordure */
+.border-title 
+{
+  font-family: Stencil Std, fantasy;
+  border: 5px solid black;
+  border-color: rebeccapurple;
+  border-radius: 20px;
+  padding: 10px; /* ajouter un peu d'espace autour du texte */
+  background-color: transparent;
+  box-shadow: 0 0 0 0 #FFF;
+  animation: pulse2 1.4s infinite;
+}
+
+@keyframes pulse
+{
+  to {
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.01);
+  }
+}
+
+@keyframes pulse2
+{
+  to {
+    box-shadow: 0 0 0 15px rgba(255, 255, 255, 0.01);
+  }
+}
+
+.border-textleft
+{
+  font-family: OCR A Std, monospace;
+  border: 2px solid white;
+  padding: 10px;
+  background-color: rebeccapurple;
+  border-radius: 10px;
+  opacity:0.8;
+}
+
+.border-textright
+{
+  font-family: OCR A Std, monospace;
+  border: 2px solid white;
+  padding: 10px;
+  background-color: mediumpurple;
+  border-radius: 10px;
+  opacity:0.9;
+}
+
+.border-login
+{
+  font-family: OCR A Std, monospace;
+  width: 50%;
+  border-color: white;
+  border: 2px solid white;
+  padding: 10px;
+  background-color: transparent;
+  backdrop-filter: blur(10px); /* c'est le flou ca */
+  border-radius: 10px;
+}
+.border-scroll
+{
+  font-family: OCR A Std, monospace;
+  border-color: white;
+  border: 2px solid white;
+  padding: 10px;
+  background-color: transparent;
+  backdrop-filter: blur(10px); /* c'est le flou ca */
+  border-radius: 10px; 
+  max-height: 40vh; /* limite la taille de cette zone a la fenetre de la page */
+  overflow-y: auto; /* met une barre de defilement si c'est trop long */
+}
